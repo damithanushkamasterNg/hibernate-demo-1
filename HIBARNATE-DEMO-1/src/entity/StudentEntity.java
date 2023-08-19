@@ -29,11 +29,13 @@ import lombok.Setter;
 @Setter
 public class StudentEntity {
 
+     // ID Attrubute
     @Id
     @Column(name="id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+     // Attrubute | Derived Attribute
     @Column(name="nic", nullable = false)
     private String nic;
 
